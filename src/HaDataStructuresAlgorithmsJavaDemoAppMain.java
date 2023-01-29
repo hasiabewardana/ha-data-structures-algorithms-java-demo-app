@@ -1,4 +1,5 @@
 import datastructures.linear.array.ArrayDemo;
+import datastructures.linear.linkedlist.LinkedListDemo;
 
 public class HaDataStructuresAlgorithmsJavaDemoAppMain {
     public static void main(String[] args) {
@@ -6,6 +7,8 @@ public class HaDataStructuresAlgorithmsJavaDemoAppMain {
 
         // Linear data structures
         // Array
-        ArrayDemo.demoArray();
+        // ArrayDemo.demoArray();
+        // Linked list
+        LinkedListDemo.demoLinkedList();
     }
 }
