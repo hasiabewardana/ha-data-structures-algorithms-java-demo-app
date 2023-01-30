@@ -1,4 +1,4 @@
-package datastructures.linear.linkedlist;
+package datastructures.linear.linkedlist.singlylinkedlist;
 
 public class LinkedListDemo {
     public static void demoLinkedList(){

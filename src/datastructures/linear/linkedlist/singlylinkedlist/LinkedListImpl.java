@@ -1,4 +1,4 @@
-package datastructures.linear.linkedlist;
+package datastructures.linear.linkedlist.singlylinkedlist;
 
 public class LinkedListImpl {
     Node head;
@@ -13,7 +13,7 @@ public class LinkedListImpl {
         Node current = head;
 
         while(current!=null){
-            System.out.println(current.data + " ");
+            System.out.print(current.data + " ");
             current = current.next;
         }
     }
