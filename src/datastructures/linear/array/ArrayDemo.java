@@ -13,5 +13,6 @@ public class ArrayDemo {
         arrayOperations.deleteFromArray();
         arrayOperations.searchElements();
         arrayOperations.traverseArray();
+        arrayOperations.updateArray();
     }
 }

@@ -109,4 +109,28 @@ public class ArrayOperations {
             System.out.println("LA[" + i + "] = " + LA[i]);
         }
     }
+
+    /*
+    *   1. Start
+        2. Set LA[K-1] = ITEM
+        3. Stop
+    * */
+    public void updateArray(){
+        int LA[] = new int[5];
+        int item = 15;
+
+        System.out.println("The array elements are: ");
+
+        for(int i = 0; i < 5; i++) {
+            LA[i] = i + 2;
+            System.out.println("LA[" + i + "] = " + LA[i]);
+        }
+
+        LA[3] = item;
+
+        System.out.println("The array elements after updation are: ");
+
+        for(int i = 0; i < 5; i++)
+            System.out.println("LA[" + i + "] = " + LA[i]);
+    }
 }
