@@ -3,10 +3,12 @@ package datastructures.linear.array;
 import java.util.Arrays;
 
 public class ArrayImpl {
+
     public void printNumbers() {
         // Declare an array of integers with a size of 5
         int[] numbers = new int[5];
 
+        // Insertion
         // Initialize the elements of the array
         numbers[0] = 10;
         numbers[1] = 20;
@@ -21,6 +23,7 @@ public class ArrayImpl {
         System.out.println("Second element of the array is: " + numbers[1]);
         // Output: The second element is: 20
 
+        // Traverse
         // Iterating over the array
         for (int i = 0; i < numbers.length; i++) {
             System.out.println(numbers[i]);
@@ -35,7 +38,8 @@ public class ArrayImpl {
         Arrays.sort(numbers);
         System.out.println("Sorted numbers: " + Arrays.toString(numbers));
 
-        // Searching
+        // Search
+        // By value
         System.out.println("The index of 50:" + Arrays.binarySearch(numbers, 50));
 
         // Filling with a number
