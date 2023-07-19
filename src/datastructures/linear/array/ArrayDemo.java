@@ -12,5 +12,6 @@ public class ArrayDemo {
         arrayOperations.insertToArray();
         arrayOperations.deleteFromArray();
         arrayOperations.searchElements();
+        arrayOperations.traverseArray();
     }
 }

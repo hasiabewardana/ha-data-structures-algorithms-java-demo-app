@@ -90,4 +90,23 @@ public class ArrayOperations {
                 System.out.println("Element " + 6 + " is found at index " + i);
         }
     }
+
+    /*
+    *   1 Start
+        2. Initialize an Array of certain size and datatype.
+        3. Initialize another variable ‘i’ with 0.
+        4. Print the ith value in the array and increment i.
+        5. Repeat Step 4 until the end of the array is reached.
+        6. End
+    * */
+    public void traverseArray(){
+        int LA[] = new int[5];
+
+        System.out.println("The array elements are: ");
+
+        for(int i = 0; i < LA.length; i++) {
+            LA[i] = i + 2;
+            System.out.println("LA[" + i + "] = " + LA[i]);
+        }
+    }
 }
