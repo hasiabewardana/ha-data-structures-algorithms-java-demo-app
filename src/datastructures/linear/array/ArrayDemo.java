@@ -14,5 +14,6 @@ public class ArrayDemo {
         arrayOperations.searchElements();
         arrayOperations.traverseArray();
         arrayOperations.updateArray();
+        arrayOperations.displayArray();
     }
 }

@@ -14,11 +14,11 @@ public class ArrayOperations {
         7. Stop
     * */
     public void insertToArray() {
-        int LA[] = new int[3];
+        int[] LA = new int[3];
 
         System.out.println("Array Before Insertion:");
 
-        for(int i = 0; i < LA.length; i++)
+        for (int i = 0; i < LA.length; i++)
             System.out.println("LA[" + i + "] = " + LA[i]); //prints empty array
 
         System.out.println("Inserting Elements..");
@@ -26,8 +26,8 @@ public class ArrayOperations {
         // Printing Array after Insertion
         System.out.println("Array After Insertion:");
 
-        for(int i = 0; i < LA.length; i++) {
-            LA[i] = i+3;
+        for (int i = 0; i < LA.length; i++) {
+            LA[i] = i + 3;
             System.out.println("LA[" + i + "] = " + LA[i]);
         }
     }
@@ -42,26 +42,26 @@ public class ArrayOperations {
         6. Set N = N-1
         7. Stop
     * */
-    public void deleteFromArray(){
-        int LA[] = new int[3];
+    public void deleteFromArray() {
+        int[] LA = new int[3];
         int n = LA.length;
 
         System.out.println("Array Before Deletion:");
 
-        for(int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) {
             LA[i] = i + 3;
             System.out.println("LA[" + i + "] = " + LA[i]);
         }
 
         // i is the index of the element to be deleted.
-        for(int i = 1; i<n-1; i++) {
-            LA[i] = LA[i+1];
+        for (int i = 1; i < n - 1; i++) {
+            LA[i] = LA[i + 1];
             n = n - 1;
         }
 
         System.out.println("Array After Deletion:");
 
-        for(int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) {
             System.out.println("LA[" + i + "] = " + LA[i]);
         }
     }
@@ -75,18 +75,18 @@ public class ArrayOperations {
         6. PRINT J, ITEM
         7. Stop
     * */
-    public void searchElements(){
-        int LA[] = new int[5];
+    public void searchElements() {
+        int[] LA = new int[5];
 
         System.out.println("Array:");
 
-        for(int i = 0; i < LA.length; i++) {
+        for (int i = 0; i < LA.length; i++) {
             LA[i] = i + 3;
             System.out.println("LA[" + i + "] = " + LA[i]);
         }
 
-        for(int i = 0; i < 5; i++) {
-            if(LA[i] == 6)
+        for (int i = 0; i < 5; i++) {
+            if (LA[i] == 6)
                 System.out.println("Element " + 6 + " is found at index " + i);
         }
     }
@@ -99,12 +99,12 @@ public class ArrayOperations {
         5. Repeat Step 4 until the end of the array is reached.
         6. End
     * */
-    public void traverseArray(){
-        int LA[] = new int[5];
+    public void traverseArray() {
+        int[] LA = new int[5];
 
         System.out.println("The array elements are: ");
 
-        for(int i = 0; i < LA.length; i++) {
+        for (int i = 0; i < LA.length; i++) {
             LA[i] = i + 2;
             System.out.println("LA[" + i + "] = " + LA[i]);
         }
@@ -115,13 +115,13 @@ public class ArrayOperations {
         2. Set LA[K-1] = ITEM
         3. Stop
     * */
-    public void updateArray(){
-        int LA[] = new int[5];
+    public void updateArray() {
+        int[] LA = new int[5];
         int item = 15;
 
         System.out.println("The array elements are: ");
 
-        for(int i = 0; i < 5; i++) {
+        for (int i = 0; i < LA.length; i++) {
             LA[i] = i + 2;
             System.out.println("LA[" + i + "] = " + LA[i]);
         }
@@ -130,7 +130,23 @@ public class ArrayOperations {
 
         System.out.println("The array elements after updation are: ");
 
-        for(int i = 0; i < 5; i++)
+        for (int i = 0; i < 5; i++)
             System.out.println("LA[" + i + "] = " + LA[i]);
+    }
+
+    /*
+    *   1. Start
+        2. Print all the elements in the Array
+        3. Stop
+    * */
+    public void displayArray() {
+        int[] LA = new int[5];
+
+        System.out.println("The array elements are: ");
+
+        for (int i = 0; i < LA.length; i++) {
+            LA[i] = i + 2;
+            System.out.println("LA[" + i + "] = " + LA[i]);
+        }
     }
 }
