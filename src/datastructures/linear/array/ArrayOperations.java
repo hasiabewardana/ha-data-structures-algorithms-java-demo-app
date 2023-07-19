@@ -65,4 +65,29 @@ public class ArrayOperations {
             System.out.println("LA[" + i + "] = " + LA[i]);
         }
     }
+
+    /*
+    *   1. Start
+        2. Set J = 0
+        3. Repeat steps 4 and 5 while J < N
+        4. IF LA[J] is equal ITEM THEN GOTO STEP 6
+        5. Set J = J +1
+        6. PRINT J, ITEM
+        7. Stop
+    * */
+    public void searchElements(){
+        int LA[] = new int[5];
+
+        System.out.println("Array:");
+
+        for(int i = 0; i < LA.length; i++) {
+            LA[i] = i + 3;
+            System.out.println("LA[" + i + "] = " + LA[i]);
+        }
+
+        for(int i = 0; i < 5; i++) {
+            if(LA[i] == 6)
+                System.out.println("Element " + 6 + " is found at index " + i);
+        }
+    }
 }
