@@ -10,5 +10,6 @@ public class ArrayDemo {
     public static void demoArrayOperations(){
         ArrayOperations arrayOperations = new ArrayOperations();
         arrayOperations.insertToArray();
+        arrayOperations.deleteFromArray();
     }
 }

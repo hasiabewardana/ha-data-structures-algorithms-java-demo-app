@@ -31,4 +31,38 @@ public class ArrayOperations {
             System.out.println("LA[" + i + "] = " + LA[i]);
         }
     }
+
+
+    /*
+    *   1. Start
+        2. Set J = K
+        3. Repeat steps 4 and 5 while J < N
+        4. Set LA[J] = LA[J + 1]
+        5. Set J = J+1
+        6. Set N = N-1
+        7. Stop
+    * */
+    public void deleteFromArray(){
+        int LA[] = new int[3];
+        int n = LA.length;
+
+        System.out.println("Array Before Deletion:");
+
+        for(int i = 0; i < n; i++) {
+            LA[i] = i + 3;
+            System.out.println("LA[" + i + "] = " + LA[i]);
+        }
+
+        // i is the index of the element to be deleted.
+        for(int i = 1; i<n-1; i++) {
+            LA[i] = LA[i+1];
+            n = n - 1;
+        }
+
+        System.out.println("Array After Deletion:");
+
+        for(int i = 0; i < n; i++) {
+            System.out.println("LA[" + i + "] = " + LA[i]);
+        }
+    }
 }
